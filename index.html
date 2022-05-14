@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Air Quality Comparison</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300&display=swap" rel="stylesheet">
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body class="wrapper">
+		<video src="img/smokestacks3850868.mp4" playsinline autoplay muted loop poster="img/pexels-natalie-dmay-4448326.jpg"></video>
+			
+
+		<span class="title label">Air Quality Comparison</span>
+		<h3>Compare air quality index (AQI) with cities across the world</h3>
+		
+		<main class="wrapper">
+			<section class="box wrapper">
+				<span class="label">Nearest city&ast;</span>
+				<h2 id="nearestCity"></h2>
+				<span class="label">Current AQI</span>
+				<h1 id="aqi1"></h3>
+				
+			</section>
+
+			<section class="box wrapper">
+				<select id="country" name="country">
+					<option value="">Choose a country</option>
+				</select>
+				
+				<select disabled id="state" name="state">
+					<option value="">Choose a state</option>
+				</select>
+				<select disabled id="city" name="city">
+					<option value="">Choose a city</option>
+				</select>
+				<span class="label">Current AQI</span>
+				<h1 id="aqi2"></h3>
+				<span id="reset" class="label button">Reset</span>
+				
+			</section>
+		</main>
+		<footer class="wrapper">
+			<p>Lower AQI indicates better air quality. This uses the <a href="https://api-docs.iqair.com/?version=latest">AirVisual API</a>, Community tier only (annual and monthly limited requests). The above figures are taken from the US AQI formula, considered to be stricter than the Chinese AQI formula below a threshold of PM2.5 concentration of 151 μg/m3; <a href="https://support.iqair.com/en/articles/3029421-what-is-the-difference-between-china-us-aqi">read more here</a>. &ast;Nearest city is based on IP geolocation. Visuals from Pexels.</p>
+		</footer>
+
+		<script type="text/javascript" src="js/main2.js"></script>
+	</body>
+</html>
