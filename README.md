@@ -8,7 +8,9 @@ Users can quickly look up the Air Quality Index of the nearest city (IP-based ge
 ## How it's made:
 **Tech used:** HTML, CSS, JavaScript.
 This uses the AirVisual API. To the left, the user's current city is determined through IP-based geolocation and the API call returns the current or latest AQI on record. 
+
 To the left of the interface, the user chooses by country/state/city, with each choice providing the query parameter for the next API call. The response returns the AQI of the selected city. 
+
 Users can then reset and search for another city.
 
 ## Optimizations
@@ -19,8 +21,8 @@ Users can then reset and search for another city.
 * Filter or sort by AQI: Providing more options for search that allows for users to seek out potential destinations by air quality instead. This could also be more easily solved with a different access tier/API key.
 
 ## Lessons learned
-I used .gitignore to protect files and variables for the first time in this project, given the for an API that provides different levels of access/API keys.
-If I were to restart this project, would approach differently or else refactor to better reflect OOP principles. 
+I used .gitignore to protect files and variables for the first time in this project, where other projects made use of fully public APIs that did not limit traffic.
+I would build this differently now, mainly to better reflect OOP principles. 
 Combining design cues with the current "reset" button functionality directs the user clearly to the next step while limiting irrelevant input that could otherwise result in invalid API calls. This was the simplest solution, but I would like to find a more elegant one.
 
 ## Other projects
